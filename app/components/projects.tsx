@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Eyecare Hospital Website",
     description: "hospital website for booking and information purpose.",
-    image: "/images/projects/2.png",
+    image: "./images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "https://sabithaeyecare.in/",
