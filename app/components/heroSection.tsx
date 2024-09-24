@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = ["/images/avatar.jpeg", "/images/hero-image.png"]; // Add your images here
+  const images = ["/images/avatar.jpeg", "/images/hero-image.jpeg"]; // Add your images here
 
   useEffect(() => {
     const interval = setInterval(() => {
