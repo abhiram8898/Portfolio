@@ -2,6 +2,8 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./tabbutton";
+import Lottie from "lottie-react";
+import portfolio from "../assets/portfolio.json";
 
 const TAB_DATA = [
   {
@@ -56,13 +58,23 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
+        {/* <Image
           src="/images/about-image.png"
           width={500}
           height={500}
           alt=""
           style={{ borderRadius: 10 }}
+        /> */}
+        <Lottie
+          animationData={portfolio}
+          loop={true}
+          style={{
+            width: "100%",
+            height: "auto",
+            borderRadius: 10,
+          }}
         />
+
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
